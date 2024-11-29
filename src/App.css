@@ -1,38 +1,115 @@
-.App {
+body{
+  background-image: url('/public/images/image1.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#heading{
+  font-size: 80px;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 0vh;
+  color: rgb(85, 26, 36);
+}
+
+#input{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 35vw;
+  height: 4vh;
+  border: 2px solid rgb(85, 26, 36);
+  margin-top: 3vh;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.day-update {
+  background-color: rgb(252, 252, 250);
+  box-shadow: 2px 2px 2px rgb(165, 104, 104);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.day-update img {
+  width: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main{
+  width: 80vw;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  height: 40vh;
+  background-image: url('/public/images/image.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-left{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 5vw;
+  margin-top: 3vw;
+  color: wheat;
+}
+
+.main-left h1{
+  margin: 0;
+  font-size: 50px;
+}
+
+#date{
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+#temp,#hum{
+  margin-top: 2px;
+}
+
+.card{
+  background-color: white;
+  color: black;
+  width: 20vw;
+  height: 35vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 3px rgb(133, 36, 36);
+}
+.card img{
+  width: 5vw;
+  height: 10vh;
+}
+#day{
+  font-size: x-large;
 }
 
-.App-link {
-  color: #61dafb;
+#temp{
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#range{
+  font-size: medium;
+  margin: 0;
 }
